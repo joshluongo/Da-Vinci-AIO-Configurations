@@ -78,21 +78,30 @@ M84     ; Désactivation des moteurs et fin de programme
 Pour le début de programme l'une des découverte qui a vraiement changé ma façon de régler l'imprimante c'est le G32 S2.
 Voici ce qu'explique le Wiki de RepRap
 
-# G32: Palpage Z et calcul de la planéité
- Utilisation
-    G32 
-    G32 Snnn 
-Parametres
+## G32: Palpage Z et calcul de la planéité
+
+ ###Utilisation
+
+    - G32 
+    - G32 Snnn
+ 
+
+###Parametres
+
     Snnn Stoquage de la matrice transformée aprés Palpage 
-Examples
+
+
+###Examples
+
     G32 
     G32 S2 (S2 => Stockage de toutes les donées vers EEPROM)
+
 
 Palpe le plateau chauffant sur 3 ou plusieurs points prédéfinit (voir M557) et met a jour la transformation de matrice pour la compensation de la plaque chauffante.
 
 RepRapFirmware execute le fichier macro bed.g
 
-Notes
+### Notes
 
     - S0 Valeur par défaut. La matrice calculée est mise a jour dans la RAM mais n'est pas stocké dans l'EEPROM. 
     La hauteur Z n'est pas calculée.
