@@ -5,7 +5,7 @@
 
 Cette page est destinée aux particuliers possédant une imprimante 3D **"Da Vinci 1.0 AIO"** modifié avec le [Repetier-Firmware-0.92.10](https://github.com/luc-github/Repetier-Firmware-0.92/tree/devt).
 
-## ATTENTION: Je ne serai en aucun cas responsable de ce que vous faites avec votre imprimante. Vous risquez d'endommager votre machine et d'annuler la garantie, pour la Da Vinci 1.0 AIO il n'y à aucun retour possible au Firmware Officiel et le Scanner 3D n'est pas pris en charge pour le moment (29/07/16). Soyez donc averti et conscient des risques que vous prennez.
+## ATTENTION: Je ne serai en aucun cas responsable de ce que vous faite avec votre imprimante. Vous risquez d'endommager votre machine et d'annuler la garantie, pour la Da Vinci 1.0 AIO il n'y à aucun retour possible au Firmware Officiel et le Scanner 3D n'est pas pris en charge pour le moment (29/07/16). Soyez donc averti et conscient des risques que vous prennez.
 
 ![](https://images-na.ssl-images-amazon.com/images/I/61yCScw0nyL._SL1000_.jpg)
 
