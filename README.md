@@ -8,7 +8,7 @@ Cette page est destinée aux particuliers possédant une imprimante 3D **"Da Vin
 
 # Pourquoi ais-je changé de Firmware ?
 
-Aprés plusieurs essais avec les logiciels officiels je me suis forgé une experience de premiére main (Imprimante sécurisée et autonome), mais j'ai voulu augmenter le contrôle de ma machine pour obtenir un paramétrage très détaillé. J'ai aussi remarqué que mon extrudeur, en fin d'impression, avait un gros problème pour retourner à sa position initiale. En effet celui-ci forçais en Y- et ne bougeais pas en X, donc risque de casse. Repetier à corrigé ce problème.
+Aprés plusieurs essais avec les logiciels officiels je me suis forgé une experience de premiére main (Imprimante sécurisée et autonome), mais j'ai voulu augmenter le contrôle de ma machine pour obtenir un paramétrage très détaillé. J'ai aussi remarqué que mon extrudeur, en fin d'impression, avait un gros problème pour retourner à sa position initiale. En effet celui-ci forçait en Y- et ne bougeait pas en X, donc risque de casse. Ce Firmware à corrigé le problème grace a quelques modifications Gcode en fin de programme.
 
 Les avantages du [Repetier-Firmware-0.92.10](https://github.com/luc-github/Repetier-Firmware-0.92/tree/devt): 
 - Un contrôle complet de ma machine (Vitesses, Températures, hauteurs de couches, logiciel de contrôle, etc...).
@@ -16,7 +16,7 @@ Les avantages du [Repetier-Firmware-0.92.10](https://github.com/luc-github/Repet
 - Un programme Gcode que j'ai configuré pour faciliter mes impressions (Début) et (Fin).
 - Et j'en oublie surement.
 
-Pour changer de Firmware j'ai suivis ce tutoriel très complet "[Repetier-Firmware-0.92.10](https://github.com/luc-github/Repetier-Firmware-0.92/tree/devt)".
+Pour changer de Firmware j'ai suivis ce tutoriel très complet. (En Anglais) "[Repetier-Firmware-0.92.10](https://github.com/luc-github/Repetier-Firmware-0.92/tree/devt)".
 
 Fichiers Utiles.
 
@@ -35,17 +35,13 @@ Fichiers Utiles.
 
 ;*****************************************************************
 
-M117 EYLEN CORPORATION ;Afficher un Message LCD
+G28 ; Position Initiale des axes XYZ
 
-G28 ; home all axes
+G1 Z5 F5000 ; Dégagement de la buse a 5mm du plateau
 
-G1 Z5 F5000 ; lift nozzle
+G28 ; Position Initiale des axes XYZ
 
-G28 ; home all axis
-
-M117 PALPAGE DU PLATEAU Z0
-
-G32 S2 ; Palpage sur 3 points pour mise a niveau du plateau
+G32 S2 ; Palpage sur 3 points pour mise à niveau du plateau MAJ du Z0 (compensation automatique du défaut de planéité)
 
 G1 F5000 X-3
 
@@ -53,16 +49,12 @@ G1 F5000 Y100
 
 G1 F5000 X5
 
-M117 ;Désactivation message affichage temps d'impression
-
 
 # Fin
 
 M104 S0 ; Désactivation des températures
 
 M106 S255 ; Refroidissement par ventilateur
-
-M117 VEUILLEZ ATTENDRE LA FIN DU REFROIDISSEMENT
 
 G90
 
@@ -72,13 +64,39 @@ G0 Y100
 
 M109 S40 ; Attente refroidissement
 
-G28 X0  ; home X axis
+G28 X0  ; Position Initiale de l'axe X
 
-G28 Y0  ; home Y axis
+G28 Y0  ; Position Initiale de l'axe Y
 
 M106 S0 ; Ventilateur désactivé
 
-M117
+M84     ; Désactivation des moteurs et fin de programme
 
-M84     ; Désactivation des moteurs
+
+## Détails
+
+Pour le début de programme l'une des découverte qui a vraiement changé ma façon de régler l'imprimante c'est le G32 S2.
+Voici ce qu'explique le Wiki de RepRap
+
+# G32: Palpage Z et calcul de la planéité
+ Utilisation
+    G32 
+    G32 Snnn 
+Parametres
+    Snnn Stoquage de la matrice transformée aprés Palpage 
+Examples
+    G32 
+    G32 S2 (S2 => Stockage des donées vers EEPROM)
+
+Palpe le plateau chauffant sur 3 ou plusieurs points prédéfinit (voir M557) et met a jour la transformation de matrice pour la compensation de la plaque chauffante.
+
+RepRapFirmware execute le fichier macro bed.g
+
+Notes
+
+    S0 Valeur par défaut. La matrice calculée est mise a jour dans la RAM mais n'est pas stocké dans l'EEPROM. 
+    La hauteur Z n'est pas calculée. 
+    S1 La matrice calculée est mise a jour dans la RAM mais n'est pas stocké dans l'EEPROM. L'imprimante bouge immédiatement à sa position Z maximale (Capteur Z max requis), et calcule la nouvelle hauteur Z. Vous devez utiliser en premier G28 pour mettre la machine en position initiale avant d'utiliser G32 Snnn pour que cela marche correctement, ou alors la hauteur Z sera invalide.
+    S2 similaire à S1, excepté la transformation de la matrice et la hauteur Z sont stoqués dans l'EEPROM. 
+    S3 La matrice transformée est stoquée dans l'EEPROM. La hauteur Z l'est pas calculée. 
 
