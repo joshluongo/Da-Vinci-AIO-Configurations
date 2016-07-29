@@ -118,3 +118,4 @@ RepRapFirmware execute le fichier macro bed.g
 
     - S3 La matrice transformée est stoquée dans l'EEPROM. La hauteur Z l'est pas calculée. 
 
+C'est tout pour le moment, des mises a jours seront effectués prochainement.
