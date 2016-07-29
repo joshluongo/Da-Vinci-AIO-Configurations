@@ -1,4 +1,4 @@
-# Bienvenue sur le Github de Eylen-Corporation
+# Bienvenue sur le Github de Eylen-Corporation  
 
 Cette page est destinée aux particuliers possédant une imprimante 3D **"Da Vinci 1.0 AIO"** modifié avec le [Repetier-Firmware-0.92.10](https://github.com/luc-github/Repetier-Firmware-0.92/tree/devt).
 
@@ -23,9 +23,9 @@ Fichiers Utiles.
 [EEPROM Modifié](https://github.com/Eylen-Corporation/Da-Vinci-AIO-Configurations/blob/6c4ff30f4fdb1d9dd75bea045f1c44bfc464134c/EEPRom-Eylen-CorporationV2.0.epr)
 - Amélioration des points de palpage pour Autoleveling (G32 S2)
 
-## Gcode pour Slicer
+# Gcode pour Slicer
 
-# Debut
+## Debut
 
 ;*****************************************************************
 
@@ -50,7 +50,7 @@ G1 F5000 Y100
 G1 F5000 X5
 
 
-# Fin
+## Fin
 
 M104 S0 ; Désactivation des températures
 
@@ -73,14 +73,14 @@ M106 S0 ; Ventilateur désactivé
 M84     ; Désactivation des moteurs et fin de programme
 
 
-## Détails
+# Détails
 
 Pour le début de programme l'une des découverte qui a vraiement changé ma façon de régler l'imprimante c'est le G32 S2.
 Voici ce qu'explique le Wiki de RepRap
 
 ## G32: Palpage Z et calcul de la planéité
 
- ###Utilisation
+###Utilisation
 
     - G32 
     - G32 Snnn
