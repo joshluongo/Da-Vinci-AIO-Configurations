@@ -21,10 +21,9 @@ Les avantages du [Repetier-Firmware-0.92.10](https://github.com/luc-github/Repet
 
 Pour changer de Firmware j'ai suivis ce tutoriel très complet. (En Anglais) "[Repetier-Firmware-0.92.10](https://github.com/luc-github/Repetier-Firmware-0.92/tree/devt)".
 
-Fichiers Utiles.
+# Fichiers Utiles
 
-[EEPROM Modifié](https://github.com/Eylen-Corporation/Da-Vinci-AIO-Configurations/blob/6c4ff30f4fdb1d9dd75bea045f1c44bfc464134c/EEPRom-Eylen-CorporationV2.0.epr)
-- Amélioration des points de palpage pour Autoleveling (G32 S2)
+[EEPROM Modifié](https://github.com/Eylen-Corporation/Da-Vinci-AIO-Configurations/blob/6c4ff30f4fdb1d9dd75bea045f1c44bfc464134c/EEPRom-Eylen-CorporationV2.0.epr) "Amélioration des points de palpage pour Autoleveling (G32 S2)".
 
 # Gcode pour Slicer
 
