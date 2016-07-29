@@ -86,7 +86,7 @@ Parametres
     Snnn Stoquage de la matrice transformée aprés Palpage 
 Examples
     G32 
-    G32 S2 (S2 => Stockage des donées vers EEPROM)
+    G32 S2 (S2 => Stockage de toutes les donées vers EEPROM)
 
 Palpe le plateau chauffant sur 3 ou plusieurs points prédéfinit (voir M557) et met a jour la transformation de matrice pour la compensation de la plaque chauffante.
 
@@ -94,9 +94,12 @@ RepRapFirmware execute le fichier macro bed.g
 
 Notes
 
-    S0 Valeur par défaut. La matrice calculée est mise a jour dans la RAM mais n'est pas stocké dans l'EEPROM. 
-    La hauteur Z n'est pas calculée. 
-    S1 La matrice calculée est mise a jour dans la RAM mais n'est pas stocké dans l'EEPROM. L'imprimante bouge immédiatement à sa position Z maximale (Capteur Z max requis), et calcule la nouvelle hauteur Z. Vous devez utiliser en premier G28 pour mettre la machine en position initiale avant d'utiliser G32 Snnn pour que cela marche correctement, ou alors la hauteur Z sera invalide.
-    S2 similaire à S1, excepté la transformation de la matrice et la hauteur Z sont stoqués dans l'EEPROM. 
-    S3 La matrice transformée est stoquée dans l'EEPROM. La hauteur Z l'est pas calculée. 
+    - S0 Valeur par défaut. La matrice calculée est mise a jour dans la RAM mais n'est pas stocké dans l'EEPROM. 
+    La hauteur Z n'est pas calculée.
+
+    - S1 La matrice calculée est mise a jour dans la RAM mais n'est pas stocké dans l'EEPROM. L'imprimante bouge immédiatement à sa position Z maximale (Capteur Z max requis), et calcule la nouvelle hauteur Z. Vous devez utiliser en premier G28 pour mettre la machine en position initiale avant d'utiliser G32 Snnn pour que cela marche correctement, ou alors la hauteur Z sera invalide.
+
+    - S2 similaire à S1, excepté la transformation de la matrice et la hauteur Z sont stoqués dans l'EEPROM. 
+
+    - S3 La matrice transformée est stoquée dans l'EEPROM. La hauteur Z l'est pas calculée. 
 
