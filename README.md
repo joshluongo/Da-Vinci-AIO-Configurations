@@ -91,7 +91,7 @@ Voici ce qu'explique le Wiki de RepRap
 
 ###Parametres
 
-    Snnn Stoquage de la matrice transformée aprés Palpage 
+    Snnn (Stockage de la matrice transformée aprés Palpage) 
 
 
 ###Examples
@@ -114,8 +114,8 @@ RepRapFirmware execute le fichier macro bed.g
     Vous devez utiliser en premier G28 pour mettre la machine en position initiale avant d'utiliser
     G32 Snnn pour que cela marche correctement, ou alors la hauteur Z sera invalide.
 
-    - S2 similaire à S1, excepté la transformation de la matrice et la hauteur Z sont stoqués dans l'EEPROM. 
+    - S2 similaire à S1, excepté la transformation de la matrice et la hauteur Z sont stockés dans l'EEPROM. 
 
-    - S3 La matrice transformée est stoquée dans l'EEPROM. La hauteur Z l'est pas calculée. 
+    - S3 La matrice transformée est stockée dans l'EEPROM. La hauteur Z l'est pas calculée. 
 
 C'est tout pour le moment, des mises a jours seront effectués prochainement.
