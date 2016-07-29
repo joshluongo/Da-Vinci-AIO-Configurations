@@ -97,7 +97,10 @@ Notes
     - S0 Valeur par défaut. La matrice calculée est mise a jour dans la RAM mais n'est pas stocké dans l'EEPROM. 
     La hauteur Z n'est pas calculée.
 
-    - S1 La matrice calculée est mise a jour dans la RAM mais n'est pas stocké dans l'EEPROM. L'imprimante bouge immédiatement à sa position Z maximale (Capteur Z max requis), et calcule la nouvelle hauteur Z. Vous devez utiliser en premier G28 pour mettre la machine en position initiale avant d'utiliser G32 Snnn pour que cela marche correctement, ou alors la hauteur Z sera invalide.
+    - S1 La matrice calculée est mise a jour dans la RAM mais n'est pas stocké dans l'EEPROM. L'imprimante 
+    bouge immédiatement à sa position Z maximale (Capteur Z max requis), et calcule la nouvelle hauteur Z.
+    Vous devez utiliser en premier G28 pour mettre la machine en position initiale avant d'utiliser
+    G32 Snnn pour que cela marche correctement, ou alors la hauteur Z sera invalide.
 
     - S2 similaire à S1, excepté la transformation de la matrice et la hauteur Z sont stoqués dans l'EEPROM. 
 
