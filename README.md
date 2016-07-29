@@ -28,33 +28,57 @@ Fichiers Utiles.
 # Debut
 
 ;*****************************************************************
+
 ;**                     EYLEN CORPORATION                       **
+
 ;**     Programme d'impression 3D par Eylen Corporation         **
+
 ;*****************************************************************
+
 M117 EYLEN CORPORATION ;Afficher un Message LCD
+
 G28 ; home all axes
+
 G1 Z5 F5000 ; lift nozzle
+
 G28 ; home all axis
+
 M117 PALPAGE DU PLATEAU Z0
+
 G32 S2 ; Palpage sur 3 points pour mise a niveau du plateau
+
 G1 F5000 X-3
+
 G1 F5000 Y100
+
 G1 F5000 X5
+
 M117 ;Désactivation message affichage temps d'impression
 
 
 # Fin
 
 M104 S0 ; Désactivation des températures
+
 M106 S255 ; Refroidissement par ventilateur
+
 M117 VEUILLEZ ATTENDRE LA FIN DU REFROIDISSEMENT
+
 G90
+
 G0 X-10
+
 G0 Y100
+
 M109 S40 ; Attente refroidissement
+
 G28 X0  ; home X axis
+
 G28 Y0  ; home Y axis
+
 M106 S0 ; Ventilateur désactivé
+
 M117
+
 M84     ; Désactivation des moteurs
 
