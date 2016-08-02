@@ -25,6 +25,9 @@ Pour changer de Firmware j'ai suivis ce tutoriel très complet. (En Anglais) "[R
 
 [EEPROM Modifié](https://github.com/Eylen-Corporation/Da-Vinci-AIO-Configurations/blob/6c4ff30f4fdb1d9dd75bea045f1c44bfc464134c/EEPRom-Eylen-CorporationV2.0.epr) "Amélioration des points de palpage pour Autoleveling (G32 S2)".
 
+![](https://raw.githubusercontent.com/Eylen-Corporation/Da-Vinci-AIO-Configurations/6c4ff30f4fdb1d9dd75bea045f1c44bfc464134c/Tuto1.png)
+![](https://raw.githubusercontent.com/Eylen-Corporation/Da-Vinci-AIO-Configurations/6c4ff30f4fdb1d9dd75bea045f1c44bfc464134c/Tuto2.png)
+
 # Gcode pour Slicer
 
 ## Debut
@@ -115,7 +118,7 @@ RepRapFirmware execute le fichier macro bed.g
 
     - S2 similaire à S1, excepté la transformation de la matrice et la hauteur Z sont stockés dans l'EEPROM. 
 
-    - S3 La matrice transformée est stockée dans l'EEPROM. La hauteur Z l'est pas calculée. 
+    - S3 La matrice transformée est stockée dans l'EEPROM. La hauteur Z n'est pas calculée. 
 
 ### Configurations Slic3r pour PLA ESUN Gris Argenté.
 
