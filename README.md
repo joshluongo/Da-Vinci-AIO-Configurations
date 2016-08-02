@@ -122,8 +122,8 @@ RepRapFirmware execute le fichier macro bed.g
 
 ## Configurations Slic3r pour PLA ESUN Gris Argenté.
 
-![](https://raw.githubusercontent.com/Eylen-Corporation/Da-Vinci-AIO-Configurations/6c4ff30f4fdb1d9dd75bea045f1c44bfc464134c/Tuto3.png)
-
 ### Fichiers de configurations: [Slic3r_config_bundle.ini](https://github.com/Eylen-Corporation/Da-Vinci-AIO-Configurations/blob/6c4ff30f4fdb1d9dd75bea045f1c44bfc464134c/config.ini), [config.ini](https://github.com/Eylen-Corporation/Da-Vinci-AIO-Configurations/blob/6c4ff30f4fdb1d9dd75bea045f1c44bfc464134c/config.ini)
+
+![](https://raw.githubusercontent.com/Eylen-Corporation/Da-Vinci-AIO-Configurations/6c4ff30f4fdb1d9dd75bea045f1c44bfc464134c/Tuto3.png)
 
 
