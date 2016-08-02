@@ -106,7 +106,7 @@ Palpe le plateau chauffant sur 3 ou plusieurs points prédéfinis (voir M557) et
 
 RepRapFirmware execute le fichier macro bed.g
 
-### Notes
+## Notes
 
     - S0 Valeur par défaut. La matrice calculée est mise a jour dans la RAM mais n'est pas stocké dans l'EEPROM. 
     La hauteur Z n'est pas calculée.
@@ -120,10 +120,10 @@ RepRapFirmware execute le fichier macro bed.g
 
     - S3 La matrice transformée est stockée dans l'EEPROM. La hauteur Z n'est pas calculée. 
 
-### Configurations Slic3r pour PLA ESUN Gris Argenté.
+## Configurations Slic3r pour PLA ESUN Gris Argenté.
 
 ![](https://raw.githubusercontent.com/Eylen-Corporation/Da-Vinci-AIO-Configurations/6c4ff30f4fdb1d9dd75bea045f1c44bfc464134c/Tuto3.png)
 
-Fichiers de configurations: [Slic3r_config_bundle.ini](https://github.com/Eylen-Corporation/Da-Vinci-AIO-Configurations/blob/6c4ff30f4fdb1d9dd75bea045f1c44bfc464134c/config.ini), [config.ini](https://github.com/Eylen-Corporation/Da-Vinci-AIO-Configurations/blob/6c4ff30f4fdb1d9dd75bea045f1c44bfc464134c/config.ini)
+### Fichiers de configurations: [Slic3r_config_bundle.ini](https://github.com/Eylen-Corporation/Da-Vinci-AIO-Configurations/blob/6c4ff30f4fdb1d9dd75bea045f1c44bfc464134c/config.ini), [config.ini](https://github.com/Eylen-Corporation/Da-Vinci-AIO-Configurations/blob/6c4ff30f4fdb1d9dd75bea045f1c44bfc464134c/config.ini)
 
 
