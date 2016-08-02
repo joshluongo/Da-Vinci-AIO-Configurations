@@ -117,4 +117,8 @@ RepRapFirmware execute le fichier macro bed.g
 
     - S3 La matrice transformée est stockée dans l'EEPROM. La hauteur Z l'est pas calculée. 
 
-C'est tout pour le moment, des mises a jours seront effectuées prochainement.
+### Configurations Slic3r pour PLA ESUN Gris Argenté.
+
+Fichiers de configurations: [Slic3r_config_bundle.ini](https://github.com/Eylen-Corporation/Da-Vinci-AIO-Configurations/blob/6c4ff30f4fdb1d9dd75bea045f1c44bfc464134c/config.ini), [config.ini](https://github.com/Eylen-Corporation/Da-Vinci-AIO-Configurations/blob/6c4ff30f4fdb1d9dd75bea045f1c44bfc464134c/config.ini)
+
+
