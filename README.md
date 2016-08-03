@@ -81,7 +81,7 @@ M84     ; Désactivation des moteurs et fin de programme
 # Détails
 
 Pour le début de programme l'une des découverte qui a vraiment changé ma façon de régler l'imprimante c'est le G32 S2.
-Voici ce qu'explique le Wiki de RepRap
+Voici ce qu'explique le [Wiki de Repetier](ttps://www.repetier.com/documentation/repetier-firmware/z-probing/)h
 
 ## G32: Palpage Z et calcul de la planéité
 
